@@ -23,10 +23,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .Line_1 {
@@ -60,10 +60,18 @@
       top: 60px;
   }
 }
+@media (max-width: 1024px) {
+  .ourprocess_bg{
+    height: auto;
+  }
+}
 @media (max-width: 768px) {
   .Line_1 {
       width: 365.011px;
       top: 40px;
+  }
+  .ourprocess_bg{
+    height: auto;
   }
 }
 @media (max-width:640px) {

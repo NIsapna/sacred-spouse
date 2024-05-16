@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 const navItems = [
-  { href: '/sacred-spouse', label: 'Home', id: '#' },
+  { href: '/', label: 'Home', id: '#' },
   { href: '/user/sign-in', label: 'Sign In', id: 'sign-in' },
   { href: '/user/sign-up', label: 'Sign Up', id: 'sign-up' },
   { href: '/our-process', label: 'Our Process', id: '#our-process' },
@@ -14,7 +14,7 @@ const navItems = [
 ];
 const Navbar = () => {
   const pathname = usePathname();
-console.log(pathname)
+  console.log(pathname)
   const isActive = (href) => {
     return pathname === href;
   };
@@ -52,8 +52,8 @@ console.log(pathname)
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} onClick={handleLinkClick}>
-                  <span className={`text-black font-[700] md:text-[16px] lg:text-[18px] 2xl:text-[20px] leading-[32px] px-2 border-b-2 border-transparent  hover:border-[#000]  transition duration-700 ease-in-out
-                   ${isActive(item.href) ? 'border-b-2 border-[#000]' : 'border-transparent'}
+                  <span className={`text-black font-[700] md:text-[16px] lg:text-[18px] 2xl:text-[20px] leading-[32px] px-2 border-b-2 border-transparent  hover:border-[#841c32]  transition duration-700 ease-in-out
+                   ${isActive(item.href) ? ' border-[#841c32]' : 'border-transparent'}
                   `}>
                     {item.label}</span>
                 </Link>
