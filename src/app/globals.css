@@ -2,32 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.custom_container {
+  @apply w-[95%] md:w-[90%] 2xl:w-[80%] md:px-[20px] mx-auto
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+.matrimonial_Image {
+  background: url("/matrimonial/Homepage_k.png");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ourprocess_bg {
+  background: url("/matrimonial/MissionPage_.png");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Line_1 {
+  overflow: visible;
+  position: absolute;
+  width: 580.011px;
+  height: 5.5px;
+  left: 2.5px;
+  top: 70px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Line_1 {
+  fill: transparent;
+  stroke: rgba(0, 0, 0, 1);
+  stroke-width: 3px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+
+.navbar {
+  background: linear-gradient(45deg, #f8f4ed, #daaf63);
+  box-shadow: rgb(221 212 199) 0px 13px 27px -5px, rgb(244 237 229) 0px 8px 16px -8px;
+}
+
+@media (max-width:1536px) {
+  .Line_1 {
+      width: 480.011px;
+      top: 60px;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 768px) {
+  .Line_1 {
+      width: 365.011px;
+      top: 40px;
+  }
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (max-width:640px) {
+  .Line_1 {
+      width: 280px;
+      top: 35px;
   }
 }

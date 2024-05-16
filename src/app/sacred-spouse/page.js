@@ -3,7 +3,7 @@ import { Hero } from '@/components/matrimonial/Hero'
 import Navbar from '@/components/matrimonial/Navbar'
 import React from 'react'
 
-const Home = () => {
+const page = () => {
   return (
     <>
     {/* <Navbar/> */}
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default page
