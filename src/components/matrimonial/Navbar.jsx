@@ -43,7 +43,7 @@ const Navbar = () => {
           <div className="">
             <img src="/icoi_logo_bm.png" alt="Logo" className='h-auto w-[235px] sm:w-[400px] 2xl:w-[450px]' />
           </div>
-          <div className="md:hidden flex flex-col justify-center items-center gap-[4px] sm:gap-[5px] absolute z-50 right-[20px] sm:right-[30px]" onClick={toggleMenu}>
+          <div className="md:hidden flex flex-col justify-center items-center gap-[4px] sm:gap-[5px] absolute z-50 right-[20px] sm:right-[30px] cursor-pointer" onClick={toggleMenu}>
             <div className={`bg-black h-[2px] sm:h-[3px] w-[20px] sm:w-[24px] transition duration-300 ease-in-out ${isMenuOpen ? 'rotate-45' : ''}`}></div>
             <div className={`bg-black h-[2px] sm:h-[3px] w-[20px] sm:w-[24px] transition duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : ''}`}></div>
             <div className={`bg-black h-[2px] sm:h-[3px] w-[20px] sm:w-[24px] transition duration-300 ease-in-out ${isMenuOpen ? '-rotate-45' : ''}`}></div>
