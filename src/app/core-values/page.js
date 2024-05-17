@@ -1,12 +1,12 @@
-import Navbar from '@/components/matrimonial/Navbar'
-import OurProcess from '@/components/matrimonial/OurProcess'
+import CoreValue from '@/components/matrimonial/CoreValue'
+import Footer from '@/components/matrimonial/Footer'
 import React from 'react'
 
 const page = () => {
     return (
         <>
-            <Navbar />
-            <OurProcess />
+            <CoreValue />
+            <Footer />
         </>
     )
 }

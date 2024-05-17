@@ -1,12 +1,12 @@
-import Navbar from '@/components/matrimonial/Navbar'
-import OurProcess from '@/components/matrimonial/OurProcess'
+import Footer from '@/components/matrimonial/Footer'
+import Mission from '@/components/matrimonial/Mission'
 import React from 'react'
 
 const page = () => {
     return (
         <>
-            <Navbar />
-            <OurProcess />
+            <Mission />
+            <Footer />
         </>
     )
 }
