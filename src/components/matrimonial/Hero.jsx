@@ -17,7 +17,7 @@ export const Hero = () => {
                 <h1 id="MATRIMONIAL_SERVICE" className="text-left font-[genkaimincho] font-normal text-black text-[35px] sm:text-[40px] md:text-[50px] lg:text-[60px] 2xl:text-[70px] md:leading-[normal]">
                   SACREDSPOUSE
                 </h1>
-                <svg class="Line_1" viewBox="0 0 680 2.5">
+                <svg className="Line_1" viewBox="0 0 680 2.5">
                   <path id="Line_1" d="M 0 2.5 L 680 0" >
                   </path>
                 </svg>
