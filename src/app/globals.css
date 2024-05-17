@@ -51,13 +51,13 @@
 }
 @media (max-width:1536px) {
   .Line_1 { width: 480.011px; top: 60px;}
-  .core_bg{height: 100vh !important; padding: 20px 0; }
+  .core_bg{height: 100vh ; padding: 20px 0; }
 }
 @media (max-width: 1023.11px) and  (min-width: 767px){
   /* .ourprocess_bg{height: auto;} */
   .Line_1 { width: 415.011px;top: 50px;}
   .ourprocess_bg{height: 100vh; }
-  .core_bg{height: auto !important; padding: 20px 0; }
+  .core_bg{height: auto ; padding: 20px 0; }
 
 }
 @media (max-width: 766.999px) {
