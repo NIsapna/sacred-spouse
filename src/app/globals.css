@@ -7,13 +7,14 @@
 }
 
 .matrimonial_Image {
-  background: url("/matrimonial/Homepage_k.png");
+  background: url("/background-imgs.png");
   height: 100vh;
   width: 100%;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .ourprocess_bg {
   background: url("/matrimonial/MissionPage_.png");
   height: 85vh;
@@ -27,6 +28,7 @@
   align-items: center;
   /* padding: 100px 0; */
 }
+
 .Line_1 {
   overflow: visible;
   position: absolute;
@@ -36,6 +38,7 @@
   top: 70px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
+
 #Line_1 {
   fill: transparent;
   stroke: rgba(0, 0, 0, 1);
@@ -45,30 +48,75 @@
   stroke-miterlimit: 4;
   shape-rendering: auto;
 }
+
 .navbar {
   background: linear-gradient(45deg, #f8f4ed, #daaf63);
   box-shadow: rgb(221 212 199) 0px 13px 27px -5px, rgb(244 237 229) 0px 8px 16px -8px;
 }
+
 @media (max-width:1536px) {
-  .Line_1 { width: 480.011px; top: 60px;}
-  .core_bg{height: 100vh ; padding: 20px 0; }
+  .Line_1 {
+    width: 480.011px;
+    top: 60px;
+  }
+
+  .core_bg {
+    height: 100vh;
+    padding: 20px 0;
+  }
 }
-@media (max-width: 1023.11px) and  (min-width: 767px){
+
+@media (max-width: 1023.11px) and (min-width: 767px) {
+
   /* .ourprocess_bg{height: auto;} */
-  .Line_1 { width: 415.011px;top: 50px;}
-  .ourprocess_bg{height: 100vh; }
-  .core_bg{height: auto ; padding: 20px 0; }
+  .Line_1 {
+    width: 415.011px;
+    top: 50px;
+  }
+
+  .ourprocess_bg {
+    height: 100vh;
+  }
+
+  .core_bg {
+    height: auto;
+    padding: 20px 0;
+  }
 
 }
+
 @media (max-width: 766.999px) {
-  .Line_1 { width: 340.011px; top: 50px;}
+  .Line_1 {
+    width: 340.011px;
+    top: 50px;
+  }
 }
+
 @media (max-width:640px) {
-  .Line_1 {width: 280px;top: 40px;}
-  .ourprocess_bg{height: auto; padding: 20px 0; }
-  .mission_bg{height: 80vh; padding: 20px 0; }
+  .Line_1 {
+    width: 280px;
+    top: 40px;
+  }
+
+  .ourprocess_bg {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .mission_bg {
+    height: 80vh;
+    padding: 20px 0;
+  }
 }
+
 @media (max-width:425px) {
-  .ourprocess_bg{height: auto; padding: 20px 0; }
-  .mission_bg{height: 80vh; padding: 20px 0; }
+  .ourprocess_bg {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .mission_bg {
+    height: 80vh;
+    padding: 20px 0;
+  }
 }

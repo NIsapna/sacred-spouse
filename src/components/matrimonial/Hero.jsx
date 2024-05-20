@@ -8,7 +8,7 @@ export const Hero = () => {
       <section className="relative h-screen overflow-hidden matrimonial_Image" id="HERO">
         <Navbar />
         <div className="custom_container">
-          <div className="relative z-10 flex flex-col top-[0px] h-full md:px-4  items-center py-[20px] sm:py-0">
+          <div className="relative z-10 flex flex-col top-[0px] h-full md:px-4  items-center py-[20px]">
             <div className="text-left">
               <p className='whitespace-nowrap text-left font-[genkaimincho] font-normal text-[#7a1a4a] lg:leading-[normal] text-[20px] sm:text-[25px] md:text-[25px] 2xl:text-[35px]'>
                 Presents

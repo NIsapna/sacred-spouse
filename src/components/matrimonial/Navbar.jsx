@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react';
 
 const navItems = [
   { href: '/', label: 'Home', id: '#' },
-  { href: '/user/sign-in', label: 'Sign In', id: 'sign-in' },
-  { href: '/user/sign-up', label: 'Sign Up', id: 'sign-up' },
+  { href: 'https://www.sacredspouse.com/user/sign-in', label: 'Sign In', id: 'sign-in' },
+  { href: 'https://www.sacredspouse.com/user/sign-up', label: 'Sign Up', id: 'sign-up' },
   { href: '/our-process', label: 'Our Process', id: '#our-process' },
   { href: '/mission-statement', label: 'Mission Statement', id: 'mission-statement' },
   { href: '/core-values', label: 'Core Values', id: 'core-values' },
@@ -39,9 +39,11 @@ const Navbar = () => {
     <nav className="bg-transparent w-full md:px-4 py-[10px] z-50">
       <div className="custom_container">
         <div className="flex w-full flex-row md:flex-col md:justify-center  justify-between items-center">
-          <div className="">
+        <Link href="/" >
+         <div className="">
             <img src="/icoi_logo_bm.png" alt="Logo" className='h-auto w-[235px] sm:w-[300px] lg:[400px] 2xl:w-[450px]' />
           </div>
+          </Link>
           <div className="md:hidden flex flex-col justify-center items-center gap-[4px] sm:gap-[5px] absolute z-50 right-[20px] sm:right-[30px] cursor-pointer" onClick={toggleMenu}>
             <div className={`bg-black h-[2px] sm:h-[3px] w-[20px] sm:w-[24px] transition duration-300 ease-in-out ${isMenuOpen ? 'rotate-45' : ''}`}></div>
             <div className={`bg-black h-[2px] sm:h-[3px] w-[20px] sm:w-[24px] transition duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : ''}`}></div>
