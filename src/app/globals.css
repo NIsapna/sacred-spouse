@@ -5,15 +5,17 @@
 .custom_container {
   @apply w-[90%] lg:w-[80%] md:px-[20px] mx-auto
 }
+
 .list_heading {
-  @apply mr-2 font-bold text-left font-[segoe-ui] text-black whitespace-nowrap
-  text-[20px]  min-[640px]:text-[21px] min-[768px]:text-[21px] min-[1200px]:text-[23px] min-[1366px]:text-[24px] min-[1536px]:text-[28px]  min-[1666px]:text-[32px] min-[1750px]:text-[35px]
+  @apply mr-2 font-bold text-left font-[segoe-ui] text-black whitespace-nowrap text-[20px] min-[640px]:text-[21px] min-[768px]:text-[21px] min-[1200px]:text-[23px] min-[1366px]:text-[24px] min-[1536px]:text-[28px] min-[1666px]:text-[32px] min-[1750px]:text-[35px]
 }
+
 .list_style {
-  @apply   text-[16px] min-[640px]:text-[18px] min-[1200px]:text-[20px]  min-[1536px]:text-[22px] min-[1666px]:text-[25px] min-[1750px]:text-[30px] 
+  @apply text-[16px] min-[640px]:text-[18px] min-[1200px]:text-[20px] min-[1536px]:text-[22px] min-[1666px]:text-[25px] min-[1750px]:text-[30px]
 }
+
 .section_head {
-  @apply whitespace-nowrap text-left font-[genkaimincho] font-normal text-black uppercase   text-[30px] min-[786px]:text-[32px] min-[1200px]:text-[36px] min-[1366px]:text-[40px]  min-[1536px]:text-[48px]   min-[1666px]:text-[53px]  min-[1750px]:text-[60px]
+  @apply whitespace-nowrap text-left font-[genkaimincho] font-normal text-black uppercase text-[30px] min-[786px]:text-[32px] min-[1200px]:text-[36px] min-[1366px]:text-[40px] min-[1536px]:text-[48px] min-[1666px]:text-[53px] min-[1750px]:text-[60px]
 }
 
 .matrimonial_Image {
@@ -21,7 +23,7 @@
   /* background: url("/background_mobile.png"); */
   height: 100vh;
   width: 100%;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,9 +67,25 @@
   box-shadow: rgb(221 212 199) 0px 13px 27px -5px, rgb(244 237 229) 0px 8px 16px -8px;
 }
 
-@media (max-width:1666px) {
-
+@media (max-width:1800px) {
+.matrimonial_Image{
+  background-position: center;
 }
+  .Line_1 {
+    width: 455.011px;
+    top: 55px;
+  }
+}
+@media (max-width:1666px) {
+.matrimonial_Image{
+  background-position: center;
+}
+  .Line_1 {
+    width: 350.011px;
+    top: 42px;
+  }
+}
+
 @media (max-width:1536px) {
   .Line_1 {
     width: 480.011px;
@@ -82,7 +100,12 @@
     top: 50px;
   }
 
-  .ourprocess_bg, .core_bg,  .mission_bg  {    height: auto;}
+  .ourprocess_bg,
+  .core_bg,
+  .mission_bg {
+    height: auto;
+  }
+
   .ourprocess_bg {
     padding: 50px 0;
   }
@@ -90,7 +113,8 @@
   .core_bg {
     padding: 20px 0;
   }
-  .mission_bg{
+
+  .mission_bg {
     padding: 100px 0;
   }
 
@@ -110,6 +134,7 @@
     background-size: contain;
     height: calc(100vh - 70px);
   }
+
   .ourprocess_bg {
     background: url("/matrimonial/MissionPage_.png");
     background-position: center;
@@ -117,13 +142,14 @@
     background-size: auto;
     margin-top: 0;
     padding: 50px 0;
-}
+  }
 
   .Line_1 {
     width: 340.011px;
     top: 50px;
   }
-  .mission_bg{
+
+  .mission_bg {
     padding: 100px 0;
   }
 }
@@ -137,7 +163,7 @@
 
 @media (max-width:425px) {
   .mission_bg {
-    height:calc(100vh - 70px);
+    height: calc(100vh - 70px);
     padding: 50px 0;
   }
 }
