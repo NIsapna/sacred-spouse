@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent w-full md:px-4 py-[10px] z-50">
+    <nav className="bg-[#f5f2ee] md:bg-transparent w-full md:px-4 py-[10px] z-50">
       <div className="custom_container">
         <div className="flex w-full flex-row md:flex-col md:justify-center  justify-between items-center">
         <Link href="/" >
