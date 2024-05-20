@@ -16,8 +16,8 @@ const processSteps = [
 const StepList = ({ steps }) => (
     <ol className="list-inside list-none space-y-6">
         {steps.map((step, index) => (
-            <li key={step.number} className="text-[17px] md:text-[22px] lg:text-[22px] 2xl:text-[30px]">
-                <span className="mr-2 font-bold text-[20px] sm:text-[24px] lg:text-[30px] 2xl:text-[35px] text-left font-[segoe-ui] text-black whitespace-nowrap">
+            <li key={step.number} className="list_style">
+                <span className="list_heading">
                     {step.id}.&nbsp;{step.number}
                 </span>
                 {step.description}
@@ -32,7 +32,7 @@ const OurProcess = () => {
             <Navbar />
             <section className='ourprocess_bg relative overflow-hidden mt-[10px]'>
                 <div className="custom_container" id="our-process">
-                    <h2 className="whitespace-nowrap text-left font-[genkaimincho] font-normal text-[30px] sm:text-[38px] md:text-[42px] 2xl:text-[60px] text-black uppercase pb-[5px] 2xl:pb:[20px] ">Our Process</h2>
+                    <h2 className="section_head">Our Process</h2>
                     <div className="h-[5px] w-[150px] mb-[10px] md:mb-[20px] bg-[#7a1a4a] rounded-md"></div>
                     <div className="lg:grid lg:grid-cols-2 gap-6 xl:gap-10 2xl:gap-14 py-[10px] md:py-[20px] justify-between flex flex-col">
                         {processSteps.map((steps, idx) => (

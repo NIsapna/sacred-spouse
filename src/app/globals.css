@@ -3,7 +3,17 @@
 @tailwind utilities;
 
 .custom_container {
-  @apply w-[90%] 2xl:w-[80%] md:px-[20px] mx-auto
+  @apply w-[90%] lg:w-[80%] md:px-[20px] mx-auto
+}
+.list_heading {
+  @apply mr-2 font-bold text-left font-[segoe-ui] text-black whitespace-nowrap
+  text-[20px]  min-[640px]:text-[21px] min-[768px]:text-[21px] min-[1200px]:text-[23px] min-[1366px]:text-[24px] min-[1536px]:text-[28px]  min-[1666px]:text-[32px] min-[1750px]:text-[35px]
+}
+.list_style {
+  @apply   text-[16px] min-[640px]:text-[18px] min-[1200px]:text-[20px]  min-[1536px]:text-[22px] min-[1666px]:text-[25px] min-[1750px]:text-[30px] 
+}
+.section_head {
+  @apply whitespace-nowrap text-left font-[genkaimincho] font-normal text-black uppercase   text-[30px] min-[786px]:text-[32px] min-[1200px]:text-[36px] min-[1366px]:text-[40px]  min-[1536px]:text-[48px]   min-[1666px]:text-[53px]  min-[1750px]:text-[60px]
 }
 
 .matrimonial_Image {
@@ -18,7 +28,7 @@
 
 .ourprocess_bg {
   background: url("/matrimonial/MissionPage_.png");
-  height: 85vh;
+  height: calc(100vh - 70px);
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 100px 0; */
+  padding: 100px 0;
 }
 
 .Line_1 {
@@ -55,33 +65,33 @@
   box-shadow: rgb(221 212 199) 0px 13px 27px -5px, rgb(244 237 229) 0px 8px 16px -8px;
 }
 
+@media (max-width:1666px) {
+
+}
 @media (max-width:1536px) {
   .Line_1 {
     width: 480.011px;
     top: 60px;
   }
-
-  .core_bg {
-    height: 100vh;
-    padding: 20px 0;
-  }
 }
 
 @media (max-width: 1023.11px) and (min-width: 767px) {
 
-  /* .ourprocess_bg{height: auto;} */
   .Line_1 {
     width: 415.011px;
     top: 50px;
   }
 
+  .ourprocess_bg, .core_bg,  .mission_bg  {    height: auto;}
   .ourprocess_bg {
-    height: 100vh;
+    padding: 50px 0;
   }
 
   .core_bg {
-    height: auto;
     padding: 20px 0;
+  }
+  .mission_bg{
+    padding: 100px 0;
   }
 
 }
@@ -96,10 +106,8 @@
   .matrimonial_Image {
     background: url("/background_mobile.png");
     background-repeat: no-repeat;
-    /* background: url(/background_mobile.png); */
     background-position: center;
     background-size: contain;
-    /* height: 90vh; */
     height: calc(100vh - 70px);
   }
   .ourprocess_bg {
@@ -108,23 +116,16 @@
     background-repeat: repeat !important;
     background-size: auto;
     margin-top: 0;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
   .Line_1 {
     width: 340.011px;
     top: 50px;
   }
-
-  /* .core_bg {
-    height: auto;
-    padding: 20px 0;
-  } */
-
-  /* .ourprocess_bg {
-    height: auto;
-    padding: 20px 0;
-  } */
+  .mission_bg{
+    padding: 100px 0;
+  }
 }
 
 @media (max-width:640px) {
@@ -132,23 +133,11 @@
     width: 280px;
     top: 40px;
   }
-
-
-
-  /* .mission_bg {
-    height: 80vh;
-    padding: 20px 0;
-  } */
 }
 
 @media (max-width:425px) {
-  /* .ourprocess_bg {
-    height: auto;
-    padding: 20px 0;
-  } */
-
   .mission_bg {
     height:calc(100vh - 70px);
-    padding: 20px 0;
+    padding: 50px 0;
   }
 }

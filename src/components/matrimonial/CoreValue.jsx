@@ -16,8 +16,8 @@ const processSteps = [
 const StepList = ({ steps }) => (
     <ol className="list-inside list-none space-y-6">
         {steps.map((step, index) => (
-            <li key={step.number} className="text-[17px] sm:text-[21px] md:text-[22px] xl:text-[25px] 2xl:text-[30px]">
-                <span className="mr-2 font-bold text-[20px] sm:text-[24px] md:text-[28px] xl:text-[31px] 2xl:text-[35px] text-left font-[segoe-ui] text-black whitespace-nowrap">
+            <li key={step.number} className="list_style">
+                <span className="list_heading">
                     {step.number}
                 </span>
 
@@ -33,9 +33,9 @@ const CoreValue = () => {
             <Navbar />
             <section className='ourprocess_bg core_bg  relative overflow-hidden mt-[10px]'>
                 <div className="custom_container" id="our-process">
-                    <h2 className="whitespace-nowrap text-left font-[genkaimincho] font-normal text-[30px] sm:text-[38px] md:text-[42px] 2xl:text-[60px] text-black uppercase  2xl:pb:[10px] ">
+                    <h2 className="section_head ">
                         CORE VALUES </h2>
-                    <div className="h-[5px] w-[150px] mb-[10px] md:mb-[20px] bg-[#7a1a4a] rounded-md"></div>
+                    <div className="h-[5px] w-[150px] mb-[20px] bg-[#7a1a4a] rounded-md"></div>
                     <div className="lg:grid lg:grid-cols-2 gap-6 xl:gap-10 2xl:gap-14 py-[20px] justify-between flex flex-col ">
                         {processSteps.map((steps, idx) => (
                             <StepList key={idx} steps={steps} />
