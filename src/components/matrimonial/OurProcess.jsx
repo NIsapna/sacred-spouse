@@ -30,7 +30,7 @@ const OurProcess = () => {
     return (
         <>
             <Navbar />
-            <section className='ourprocess_bg relative overflow-hidden mt-[10px]'>
+            <section className='ourprocess_bg relative overflow-hidden mt-[10px]  sm:mb-0 mb-[70px]'>
                 <div className="custom_container" id="our-process">
                     <h2 className="whitespace-nowrap text-left font-[genkaimincho] font-normal text-[30px] lg:text-[42px] sx:text-[45px] 2xl:text-[60px] text-black uppercase pb-[5px] 2xl:pb:[20px] ">Our Process</h2>
                     <div className="h-[5px] w-[150px] mb-[10px] md:mb-[20px] bg-[#7a1a4a] rounded-md"></div>

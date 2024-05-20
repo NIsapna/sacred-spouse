@@ -5,7 +5,7 @@ import Image from 'next/image'
 export const Hero = () => {
   return (
     <>
-      <section className="relative h-screen overflow-hidden matrimonial_Image" id="HERO">
+      <section className="relative matrimonial_Image" id="HERO">
         <Navbar />
         <div className="custom_container">
           <div className="relative z-10 flex flex-col top-[0px] h-full md:px-4  items-center py-[20px]">

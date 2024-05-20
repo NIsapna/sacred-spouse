@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .ourprocess_bg {
   background: url("/matrimonial/MissionPage_.png");
   height: 85vh;
@@ -85,16 +86,36 @@
 
 }
 
+@media (max-width: 840px) {
+  .ourprocess_bg {
+    height: auto;
+  }
+}
+
 @media (max-width: 766.999px) {
   .matrimonial_Image {
     background: url("/background_mobile.png");
-    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background: url(/background_mobile.png); */
+    background-position: center;
+    background-size: contain;
+    /* height: 90vh; */
+    height: calc(100vh - 70px);
   }
+
   .Line_1 {
     width: 340.011px;
     top: 50px;
+  }
+
+  /* .core_bg {
+    height: auto;
+    padding: 20px 0;
+  } */
+
+  .ourprocess_bg {
+    height: auto;
+    padding: 20px 0;
   }
 }
 
@@ -104,10 +125,7 @@
     top: 40px;
   }
 
-  .ourprocess_bg {
-    height: auto;
-    padding: 20px 0;
-  }
+
 
   .mission_bg {
     height: 80vh;
@@ -122,7 +140,7 @@
   }
 
   .mission_bg {
-    height: 80vh;
+    /* height: 80vh; */
     padding: 20px 0;
   }
 }
