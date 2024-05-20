@@ -140,7 +140,7 @@
   }
 
   .mission_bg {
-    /* height: 80vh; */
+    height:calc(100vh - 70px);
     padding: 20px 0;
   }
 }
